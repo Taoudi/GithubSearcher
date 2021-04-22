@@ -35,9 +35,17 @@ class GithubScraper:
             except Exception as e:
                 print(e)
 
+    def mass_search(self):
+        repos = self.g.search_repositories(query='language:java')
+        for repo in repos:
+            print(repo)
+            print(repo.owner)
+            self.get_content(repo,"")
+
 
 
 if __name__ == "__main__":
     f = open("credentials", "r")
-    git = GithubScraper(f.readline())
-    git.get_repos_by_uname("Taoudi")
+    git = GithubScraper(f.readline(),filename="javaurls2")
+    #git.get_repos_by_uname("Taoudi")
+    git.mass_search()
