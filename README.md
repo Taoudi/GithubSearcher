@@ -1,6 +1,6 @@
 ## DD2476 - GithubProject
 
-## Run Backend
+# Run Backend
 
 In the project directory, run:
 
