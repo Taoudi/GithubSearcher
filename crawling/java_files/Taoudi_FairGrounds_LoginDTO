@@ -1,0 +1,40 @@
+{ url:https://raw.githubusercontent.com/Taoudi/FairGrounds/master/src/main/java/FairGrounds/Presentation/LoginDTO.java
+,
+functions:[{ access_modifier:public, return_type:void, method_name:setUserLoginName, parameters:[{ type:String, name:userName}] }, { access_modifier:public, return_type:void, method_name:setUserLoginPwd, parameters:[{ type:String, name:userPwd}] }, { access_modifier:public, return_type:String, method_name:getUserLoginName, parameters:[] }, { access_modifier:public, return_type:String, method_name:getUserLoginPwd, parameters:[] }],
+codeblock:{
+package FairGrounds.Presentation;
+
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.Size;
+
+/**
+ * Wrapper object for login data
+ */
+public class LoginDTO {
+
+    @NotBlank(message = "Please enter username")
+    private String userLoginName;
+
+    @NotBlank(message = "Please enter password")
+    @Size (min = 6, message = "Password must be min 6 characters")
+    private String userLoginPwd;
+
+    public void setUserLoginName(String userName) {
+        this.userLoginName = userName;
+    }
+
+    public void setUserLoginPwd(String userPwd) {
+        this.userLoginPwd = userPwd;
+    }
+
+    public String getUserLoginName() {
+        return userLoginName;
+    }
+
+    public String getUserLoginPwd() {
+        return userLoginPwd;
+    }
+}
+
+}
+}
