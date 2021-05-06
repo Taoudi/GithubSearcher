@@ -1,0 +1,26 @@
+{ url:https://raw.githubusercontent.com/Taoudi/FairGrounds/master/src/main/java/FairGrounds/Domain/ExpertiseProfileDTO.java
+,
+functions:[{ access_modifier:public, return_type:Person, method_name:getPerson, parameters:[] }, { access_modifier:public, return_type:Expertise, method_name:getExpertise, parameters:[] }, { access_modifier:public, return_type:long, method_name:getYearsOfEx, parameters:[] }, { access_modifier:public, return_type:void, method_name:setPerson, parameters:[{ type:Person, name:personId}] }, { access_modifier:public, return_type:void, method_name:setExpertise, parameters:[{ type:Expertise, name:expertise}] }, { access_modifier:public, return_type:void, method_name:setYearsOfEx, parameters:[{ type:long, name:yearsOfEx}] }],
+codeblock:{
+package FairGrounds.Domain;
+
+public interface ExpertiseProfileDTO {
+
+    public Person getPerson();
+
+    public Expertise getExpertise();
+
+    public long getYearsOfEx();
+
+    public void setPerson(Person personId);
+
+    public void setExpertise(Expertise expertise);
+
+    public void setYearsOfEx(long yearsOfEx);
+
+
+
+}
+
+}
+}
