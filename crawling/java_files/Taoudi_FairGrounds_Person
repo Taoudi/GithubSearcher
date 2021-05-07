@@ -1,7 +1,23 @@
-{ url:https://raw.githubusercontent.com/Taoudi/FairGrounds/master/src/main/java/FairGrounds/Domain/Person.java
-,
-functions:[{ access_modifier:public, return_type:String, method_name:getRole, parameters:[] }, { access_modifier:public, return_type:void, method_name:setRole, parameters:[{ type:String, name:roleId}] }, { access_modifier:public, return_type:Long, method_name:getPersonId, parameters:[] }, { access_modifier:public, return_type:void, method_name:setPersonId, parameters:[{ type:Long, name:personId}] }, { access_modifier:public, return_type:void, method_name:setFname, parameters:[{ type:String, name:fname}] }, { access_modifier:public, return_type:void, method_name:setLname, parameters:[{ type:String, name:lname}] }, { access_modifier:public, return_type:void, method_name:setSsnr, parameters:[{ type:String, name:scn}] }, { access_modifier:public, return_type:void, method_name:setEmail, parameters:[{ type:String, name:email}] }, { access_modifier:public, return_type:void, method_name:setUsername, parameters:[{ type:String, name:uname}] }, { access_modifier:public, return_type:void, method_name:setPwd, parameters:[{ type:String, name:pwd}] }, { access_modifier:public, return_type:String, method_name:getFname, parameters:[] }, { access_modifier:public, return_type:String, method_name:getLname, parameters:[] }, { access_modifier:public, return_type:String, method_name:getSsnr, parameters:[] }, { access_modifier:public, return_type:String, method_name:getEmail, parameters:[] }, { access_modifier:public, return_type:String, method_name:getUsername, parameters:[] }, { access_modifier:public, return_type:String, method_name:getPwd, parameters:[] }, { access_modifier:public, return_type:void, method_name:setApplication, parameters:[{ type:Application, name:application}] }, { access_modifier:public, return_type:Application, method_name:getApplication, parameters:[] }],
-codeblock:{
+{ url:https://raw.githubusercontent.com/Taoudi/FairGrounds/master/src/main/java/FairGrounds/Domain/Person.java,
+functions:[{ access_modifier:public, return_type:String, method_name:getRole, parameters:[] },
+ { access_modifier:public, return_type:void, method_name:setRole, parameters:[{ type:String, name:roleId}] },
+ { access_modifier:public, return_type:Long, method_name:getPersonId, parameters:[] },
+ { access_modifier:public, return_type:void, method_name:setPersonId, parameters:[{ type:Long, name:personId}] },
+ { access_modifier:public, return_type:void, method_name:setFname, parameters:[{ type:String, name:fname}] },
+ { access_modifier:public, return_type:void, method_name:setLname, parameters:[{ type:String, name:lname}] },
+ { access_modifier:public, return_type:void, method_name:setSsnr, parameters:[{ type:String, name:scn}] },
+ { access_modifier:public, return_type:void, method_name:setEmail, parameters:[{ type:String, name:email}] },
+ { access_modifier:public, return_type:void, method_name:setUsername, parameters:[{ type:String, name:uname}] },
+ { access_modifier:public, return_type:void, method_name:setPwd, parameters:[{ type:String, name:pwd}] },
+ { access_modifier:public, return_type:String, method_name:getFname, parameters:[] },
+ { access_modifier:public, return_type:String, method_name:getLname, parameters:[] },
+ { access_modifier:public, return_type:String, method_name:getSsnr, parameters:[] },
+ { access_modifier:public, return_type:String, method_name:getEmail, parameters:[] },
+ { access_modifier:public, return_type:String, method_name:getUsername, parameters:[] },
+ { access_modifier:public, return_type:String, method_name:getPwd, parameters:[] },
+ { access_modifier:public, return_type:void, method_name:setApplication, parameters:[{ type:Application, name:application}] },
+ { access_modifier:public, return_type:Application, method_name:getApplication, parameters:[] }],
+codeblock:{"""
 package FairGrounds.Domain;
 
 import FairGrounds.Presentation.RegisterDTO;
@@ -159,5 +175,5 @@ public class Person {
     }
 }
 
-}
+"""}
 }

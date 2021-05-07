@@ -1,7 +1,9 @@
-{ url:https://raw.githubusercontent.com/Taoudi/FairGrounds/master/src/main/java/FairGrounds/Domain/Expertise.java
-,
-functions:[{ access_modifier:public, return_type:Long, method_name:getId, parameters:[] }, { access_modifier:public, return_type:void, method_name:setId, parameters:[{ type:Long, name:id}] }, { access_modifier:public, return_type:String, method_name:getName, parameters:[] }, { access_modifier:public, return_type:void, method_name:setName, parameters:[{ type:String, name:name}] }],
-codeblock:{
+{ url:https://raw.githubusercontent.com/Taoudi/FairGrounds/master/src/main/java/FairGrounds/Domain/Expertise.java,
+functions:[{ access_modifier:public, return_type:Long, method_name:getId, parameters:[] },
+ { access_modifier:public, return_type:void, method_name:setId, parameters:[{ type:Long, name:id}] },
+ { access_modifier:public, return_type:String, method_name:getName, parameters:[] },
+ { access_modifier:public, return_type:void, method_name:setName, parameters:[{ type:String, name:name}] }],
+codeblock:{"""
 package FairGrounds.Domain;
 
 import javax.persistence.*;
@@ -45,5 +47,5 @@ public class Expertise {
         this.name = name;
     }
 }
-}
+"""}
 }

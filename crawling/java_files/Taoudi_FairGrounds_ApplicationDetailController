@@ -1,7 +1,6 @@
-{ url:https://raw.githubusercontent.com/Taoudi/FairGrounds/master/src/main/java/FairGrounds/Presentation/ApplicationDetailController.java
-,
+{ url:https://raw.githubusercontent.com/Taoudi/FairGrounds/master/src/main/java/FairGrounds/Presentation/ApplicationDetailController.java,
 functions:[{ access_modifier:public, return_type:void, method_name:initBinder, parameters:[{ type:WebDataBinder, name:binder}] }],
-codeblock:{
+codeblock:{"""
 package FairGrounds.Presentation;
 import FairGrounds.Application.ApplicationService;
 import FairGrounds.Domain.Application;
@@ -99,5 +98,5 @@ public class ApplicationDetailController {
     }
 }
 
-}
+"""}
 }

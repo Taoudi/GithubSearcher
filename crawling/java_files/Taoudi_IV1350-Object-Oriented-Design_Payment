@@ -1,7 +1,7 @@
-{ url:https://raw.githubusercontent.com/Taoudi/IV1350-Object-Oriented-Design/master/src/se/kth/iv1305/vehicleinspection/model/Payment.java
-,
-functions:[{ access_modifier:public, return_type:Amount, method_name:getAmount, parameters:[] }, { access_modifier:public, return_type:Amount, method_name:getCost, parameters:[{ type:VehicleDTO, name:vehicle}, { type:Discount, name:discount}] }],
-codeblock:{
+{ url:https://raw.githubusercontent.com/Taoudi/IV1350-Object-Oriented-Design/master/src/se/kth/iv1305/vehicleinspection/model/Payment.java,
+functions:[{ access_modifier:public, return_type:Amount, method_name:getAmount, parameters:[] },
+ { access_modifier:public, return_type:Amount, method_name:getCost, parameters:[{ type:VehicleDTO, name:vehicle}, { type:Discount, name:discount}] }],
+codeblock:{"""
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -58,5 +58,5 @@ public class Payment {
 
 }
 
-}
+"""}
 }

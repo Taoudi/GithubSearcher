@@ -1,7 +1,13 @@
-{ url:https://raw.githubusercontent.com/Taoudi/FairGrounds/master/src/main/java/FairGrounds/Domain/ExpertiseProfile.java
-,
-functions:[{ access_modifier:public, return_type:Expertise, method_name:getExpertise, parameters:[] }, { access_modifier:public, return_type:void, method_name:setExpertise, parameters:[{ type:Expertise, name:expertise}] }, { access_modifier:public, return_type:Long, method_name:getExpertiseprofile_id, parameters:[] }, { access_modifier:public, return_type:void, method_name:setExpertiseprofile_id, parameters:[{ type:Long, name:expertiseprofile_id}] }, { access_modifier:public, return_type:Application, method_name:getApplication, parameters:[] }, { access_modifier:public, return_type:void, method_name:setApplication, parameters:[{ type:Application, name:application}] }, { access_modifier:public, return_type:Double, method_name:getYears, parameters:[] }, { access_modifier:public, return_type:void, method_name:setYears, parameters:[{ type:Double, name:years}] }],
-codeblock:{
+{ url:https://raw.githubusercontent.com/Taoudi/FairGrounds/master/src/main/java/FairGrounds/Domain/ExpertiseProfile.java,
+functions:[{ access_modifier:public, return_type:Expertise, method_name:getExpertise, parameters:[] },
+ { access_modifier:public, return_type:void, method_name:setExpertise, parameters:[{ type:Expertise, name:expertise}] },
+ { access_modifier:public, return_type:Long, method_name:getExpertiseprofile_id, parameters:[] },
+ { access_modifier:public, return_type:void, method_name:setExpertiseprofile_id, parameters:[{ type:Long, name:expertiseprofile_id}] },
+ { access_modifier:public, return_type:Application, method_name:getApplication, parameters:[] },
+ { access_modifier:public, return_type:void, method_name:setApplication, parameters:[{ type:Application, name:application}] },
+ { access_modifier:public, return_type:Double, method_name:getYears, parameters:[] },
+ { access_modifier:public, return_type:void, method_name:setYears, parameters:[{ type:Double, name:years}] }],
+codeblock:{"""
 package FairGrounds.Domain;
 
 import org.springframework.beans.factory.annotation.Value;
@@ -98,5 +104,5 @@ public class ExpertiseProfile{
     }
 }
 
-}
+"""}
 }

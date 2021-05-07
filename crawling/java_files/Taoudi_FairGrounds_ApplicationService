@@ -1,7 +1,12 @@
-{ url:https://raw.githubusercontent.com/Taoudi/FairGrounds/master/src/main/java/FairGrounds/Application/ApplicationService.java
-,
-functions:[{ access_modifier:public, return_type:List<Expertise>, method_name:getExpertises, parameters:[] }, { access_modifier:public, return_type:Person, method_name:getUser, parameters:[] }, { access_modifier:public, return_type:String, method_name:getPassword, parameters:[] }, { access_modifier:public, return_type:void, method_name:storeApplication, parameters:[{ type:Application, name:application}, { type:String, name:encodedPassword}, { type:BCryptPasswordEncoder, name:encoder}] }, { access_modifier:private, return_type:void, method_name:checkApplication, parameters:[{ type:Application, name:application}] }, { access_modifier:public, return_type:Application, method_name:getApplication, parameters:[{ type:Long, name:id}] }, { access_modifier:public, return_type:void, method_name:storeChangedApplication, parameters:[{ type:Application, name:application}] }],
-codeblock:{
+{ url:https://raw.githubusercontent.com/Taoudi/FairGrounds/master/src/main/java/FairGrounds/Application/ApplicationService.java,
+functions:[{ access_modifier:public, return_type:List<Expertise>, method_name:getExpertises, parameters:[] },
+ { access_modifier:public, return_type:Person, method_name:getUser, parameters:[] },
+ { access_modifier:public, return_type:String, method_name:getPassword, parameters:[] },
+ { access_modifier:public, return_type:void, method_name:storeApplication, parameters:[{ type:Application, name:application}, { type:String, name:encodedPassword}, { type:BCryptPasswordEncoder, name:encoder}] },
+ { access_modifier:private, return_type:void, method_name:checkApplication, parameters:[{ type:Application, name:application}] },
+ { access_modifier:public, return_type:Application, method_name:getApplication, parameters:[{ type:Long, name:id}] },
+ { access_modifier:public, return_type:void, method_name:storeChangedApplication, parameters:[{ type:Application, name:application}] }],
+codeblock:{"""
 package FairGrounds.Application;
 
 import FairGrounds.Domain.*;
@@ -142,5 +147,5 @@ public class ApplicationService {
     }
 }
 
-}
+"""}
 }

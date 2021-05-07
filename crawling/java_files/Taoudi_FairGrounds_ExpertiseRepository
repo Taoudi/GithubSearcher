@@ -1,7 +1,7 @@
-{ url:https://raw.githubusercontent.com/Taoudi/FairGrounds/master/src/main/java/FairGrounds/Repository/ExpertiseRepository.java
-,
-functions:[{ access_modifier:, return_type:List<Expertise>, method_name:findAll, parameters:[] }, { access_modifier:, return_type:Expertise, method_name:findByName, parameters:[{ type:String, name:name}] }],
-codeblock:{
+{ url:https://raw.githubusercontent.com/Taoudi/FairGrounds/master/src/main/java/FairGrounds/Repository/ExpertiseRepository.java,
+functions:[{ access_modifier:, return_type:List<Expertise>, method_name:findAll, parameters:[] },
+ { access_modifier:, return_type:Expertise, method_name:findByName, parameters:[{ type:String, name:name}] }],
+codeblock:{"""
 package FairGrounds.Repository;
 
 import FairGrounds.Domain.Expertise;
@@ -32,5 +32,5 @@ public interface ExpertiseRepository  extends JpaRepository<Expertise, Integer> 
     Expertise findByName(String name);
 }
 
-}
+"""}
 }

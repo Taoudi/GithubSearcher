@@ -1,7 +1,9 @@
-{ url:https://raw.githubusercontent.com/Taoudi/FairGrounds/master/src/main/java/FairGrounds/Repository/RegisterApplicationRepository.java
-,
-functions:[{ access_modifier:, return_type:List<Application>, method_name:findAll, parameters:[] }, { access_modifier:, return_type:void, method_name:deleteById, parameters:[{ type:Long, name:integer}] }, { access_modifier:, return_type:Application, method_name:findApplicationById, parameters:[{ type:Long, name:id}] }, { access_modifier:, return_type:Application, method_name:findApplicationByPerson, parameters:[{ type:Person, name:person}] }],
-codeblock:{
+{ url:https://raw.githubusercontent.com/Taoudi/FairGrounds/master/src/main/java/FairGrounds/Repository/RegisterApplicationRepository.java,
+functions:[{ access_modifier:, return_type:List<Application>, method_name:findAll, parameters:[] },
+ { access_modifier:, return_type:void, method_name:deleteById, parameters:[{ type:Long, name:integer}] },
+ { access_modifier:, return_type:Application, method_name:findApplicationById, parameters:[{ type:Long, name:id}] },
+ { access_modifier:, return_type:Application, method_name:findApplicationByPerson, parameters:[{ type:Person, name:person}] }],
+codeblock:{"""
 package FairGrounds.Repository;
 
         import FairGrounds.Domain.Application;
@@ -49,5 +51,5 @@ public interface RegisterApplicationRepository extends JpaRepository<Application
     Application findApplicationByPerson(Person person);
 }
 
-}
+"""}
 }

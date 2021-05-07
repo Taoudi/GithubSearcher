@@ -1,7 +1,14 @@
-{ url:https://raw.githubusercontent.com/Taoudi/IV1350-Object-Oriented-Design/master/test/se/kth/iv1305/vehicleinspection/model/CardDTOTest.java
-,
-functions:[{ access_modifier:public, static: True, return_type:void, method_name:setUpClass, parameters:[] }, { access_modifier:public, static: True, return_type:void, method_name:tearDownClass, parameters:[] }, { access_modifier:public, return_type:void, method_name:setUp, parameters:[] }, { access_modifier:public, return_type:void, method_name:tearDown, parameters:[] }, { access_modifier:public, return_type:void, method_name:testGetCVC, parameters:[] }, { access_modifier:public, return_type:void, method_name:testGetExpiryDate, parameters:[] }, { access_modifier:public, return_type:void, method_name:testGetCardHolder, parameters:[] }, { access_modifier:public, return_type:void, method_name:testGetNumber, parameters:[] }, { access_modifier:public, return_type:void, method_name:testGetPin, parameters:[] }],
-codeblock:{
+{ url:https://raw.githubusercontent.com/Taoudi/IV1350-Object-Oriented-Design/master/test/se/kth/iv1305/vehicleinspection/model/CardDTOTest.java,
+functions:[{ access_modifier:public, static: True, return_type:void, method_name:setUpClass, parameters:[] },
+ { access_modifier:public, static: True, return_type:void, method_name:tearDownClass, parameters:[] },
+ { access_modifier:public, return_type:void, method_name:setUp, parameters:[] },
+ { access_modifier:public, return_type:void, method_name:tearDown, parameters:[] },
+ { access_modifier:public, return_type:void, method_name:testGetCVC, parameters:[] },
+ { access_modifier:public, return_type:void, method_name:testGetExpiryDate, parameters:[] },
+ { access_modifier:public, return_type:void, method_name:testGetCardHolder, parameters:[] },
+ { access_modifier:public, return_type:void, method_name:testGetNumber, parameters:[] },
+ { access_modifier:public, return_type:void, method_name:testGetPin, parameters:[] }],
+codeblock:{"""
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -98,5 +105,5 @@ public class CardDTOTest {
 
 }
 
-}
+"""}
 }

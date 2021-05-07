@@ -1,7 +1,6 @@
-{ url:https://raw.githubusercontent.com/Taoudi/FairGrounds/master/src/main/java/FairGrounds/Repository/ExpertiseProfileRepository.java
-,
+{ url:https://raw.githubusercontent.com/Taoudi/FairGrounds/master/src/main/java/FairGrounds/Repository/ExpertiseProfileRepository.java,
 functions:[{ access_modifier:, return_type:List<ExpertiseProfile>, method_name:findAll, parameters:[] }],
-codeblock:{
+codeblock:{"""
 package FairGrounds.Repository;
 
 import FairGrounds.Domain.Expertise;
@@ -23,5 +22,5 @@ public interface ExpertiseProfileRepository extends JpaRepository<ExpertiseProfi
     @Override
     List<ExpertiseProfile> findAll();
 }
-}
+"""}
 }

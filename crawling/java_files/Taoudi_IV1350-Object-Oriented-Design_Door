@@ -1,7 +1,9 @@
-{ url:https://raw.githubusercontent.com/Taoudi/IV1350-Object-Oriented-Design/master/src/se/kth/iv1305/vehicleinspection/model/garage/Door.java
-,
-functions:[{ access_modifier:public, static: True, return_type:Door, method_name:getDoor, parameters:[] }, { access_modifier:, return_type:void, method_name:open, parameters:[] }, { access_modifier:, return_type:void, method_name:close, parameters:[] }, { access_modifier:private, return_type:void, method_name:contactDoor, parameters:[] }],
-codeblock:{
+{ url:https://raw.githubusercontent.com/Taoudi/IV1350-Object-Oriented-Design/master/src/se/kth/iv1305/vehicleinspection/model/garage/Door.java,
+functions:[{ access_modifier:public, static: True, return_type:Door, method_name:getDoor, parameters:[] },
+ { access_modifier:, return_type:void, method_name:open, parameters:[] },
+ { access_modifier:, return_type:void, method_name:close, parameters:[] },
+ { access_modifier:private, return_type:void, method_name:contactDoor, parameters:[] }],
+codeblock:{"""
 package se.kth.iv1305.vehicleinspection.model.garage;
 
 import java.awt.Color;
@@ -62,5 +64,5 @@ class Door {
     }
 }
 
-}
+"""}
 }

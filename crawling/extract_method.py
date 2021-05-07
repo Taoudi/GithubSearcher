@@ -19,13 +19,13 @@ class Code:
         self.url = url
 
     def jsonify(self):
-        string =  "{ url:" + self.url + ",\nfunctions:" + "["
+        string =  "{ url:" + self.url.replace('\n','') + ",\nfunctions:" + "["
         for i,f in enumerate(self.functions):
             string+=f.jsonify()
             if i< len(self.functions)-1:
-                string+=", "
+                string+=",\n "
         
-        string+="]" +  ",\ncodeblock:{\n"+self.codeblock + "\n}\n}"
+        string+="]" +  ",\ncodeblock:{\"\"\"\n"+self.codeblock + "\n\"\"\"}\n}"
         return string
 
 class Parameter:

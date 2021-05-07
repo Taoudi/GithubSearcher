@@ -1,7 +1,6 @@
-{ url:https://raw.githubusercontent.com/Taoudi/FairGrounds/master/src/main/java/FairGrounds/Main.java
-,
+{ url:https://raw.githubusercontent.com/Taoudi/FairGrounds/master/src/main/java/FairGrounds/Main.java,
 functions:[{ access_modifier:public, static: True, return_type:void, method_name:main, parameters:[{ type:String[], name:args}] }],
-codeblock:{
+codeblock:{"""
 package FairGrounds;
 
 import org.springframework.boot.SpringApplication;
@@ -18,5 +17,5 @@ public class Main {
         SpringApplication.run(Main.class);
     }
 }
-}
+"""}
 }

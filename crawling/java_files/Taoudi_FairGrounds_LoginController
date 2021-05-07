@@ -1,7 +1,7 @@
-{ url:https://raw.githubusercontent.com/Taoudi/FairGrounds/master/src/main/java/FairGrounds/Presentation/LoginController.java
-,
-functions:[{ access_modifier:public, return_type:String, method_name:showLoginPage, parameters:[{ type:LoginDTO, name:loginDTO}, { type:Model, name:model}] }, { access_modifier:public, return_type:String, method_name:showRegistrationPage, parameters:[{ type:RegisterDTO, name:registerDTO}] }],
-codeblock:{
+{ url:https://raw.githubusercontent.com/Taoudi/FairGrounds/master/src/main/java/FairGrounds/Presentation/LoginController.java,
+functions:[{ access_modifier:public, return_type:String, method_name:showLoginPage, parameters:[{ type:LoginDTO, name:loginDTO}, { type:Model, name:model}] },
+ { access_modifier:public, return_type:String, method_name:showRegistrationPage, parameters:[{ type:RegisterDTO, name:registerDTO}] }],
+codeblock:{"""
 package FairGrounds.Presentation;
 
 import FairGrounds.Application.LoginService;
@@ -88,5 +88,5 @@ public class LoginController {
 
 }
 
-}
+"""}
 }
