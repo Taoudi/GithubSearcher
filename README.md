@@ -4,7 +4,11 @@
 
 In the project directory, run:
 
-`python3 backend/controller.py`
+`export FLASK_APP=backend`
+
+`flask run`
+
+Then open http://127.0.0.1:5000/ on your navigator.
 
 Modules that need to be pip installed:
 - flask
