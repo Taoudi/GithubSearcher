@@ -1,6 +1,6 @@
 { url:https://raw.githubusercontent.com/Taoudi/IV1350-Object-Oriented-Design/master/src/se/kth/iv1305/vehicleinspection/integration/InspectionCatalog.java
 ,
-functions:[{ access_modifier:public, return_type:void, method_name:storeResult, parameters:[{ type:boolean, name:inspectionPassed}] }, { access_modifier:public, return_type:ArrayList<Result>, method_name:getResultList, parameters:[] }, { access_modifier:private, return_type:void, method_name:notifyObservers, parameters:[] }, { access_modifier:public, return_type:void, method_name:addResultObserver, parameters:[{ type:ResultObserver, name:obs}] }],
+functions:[{ access_modifier:public, return_type:void, method_name:storeResult, parameters:[{ type:boolean, name:inspectionPassed}] }, { access_modifier:public, return_type:ArrayList<Result>, method_name:getResultList, parameters:[] }, { access_modifier:private, return_type:void, method_name:notifyObservers, parameters:[] }, { access_modifier:public, return_type:void, method_name:addResultObserver, parameters:[{ type:ResultObserver, name:obs}] }, { access_modifier:public, return_type:void, method_name:addResultObservers, parameters:[{ type:List<ResultObserver>, name:observers}] }],
 codeblock:{
 /*
  * To change this license header, choose License Headers in Project Properties.
