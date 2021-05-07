@@ -34,10 +34,10 @@ def query():
         output = json.loads(x)
 
 
-        return render_template("example.html", output = json.dumps(output))
+        return render_template("interface.html", output = json.dumps(output))
 
     else:
-        return render_template("example.html")
+        return render_template("interface.html")
 
 # Test function, try to display the time on the front end
 @app.route('/time')
