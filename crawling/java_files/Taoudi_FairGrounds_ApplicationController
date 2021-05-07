@@ -1,7 +1,7 @@
-{ url:https://raw.githubusercontent.com/Taoudi/FairGrounds/master/src/main/java/FairGrounds/Presentation/ApplicationController.java
-,
-functions:[{ access_modifier:public, return_type:void, method_name:initBinder, parameters:[{ type:WebDataBinder, name:binder}] }, { access_modifier:private, return_type:void, method_name:printAll, parameters:[{ type:ApplicationForm, name:form}] }],
-codeblock:{
+{ url:https://raw.githubusercontent.com/Taoudi/FairGrounds/master/src/main/java/FairGrounds/Presentation/ApplicationController.java,
+functions:[{ access_modifier:public, return_type:void, method_name:initBinder, parameters:[{ type:WebDataBinder, name:binder}] },
+ { access_modifier:private, return_type:void, method_name:printAll, parameters:[{ type:ApplicationForm, name:form}] }],
+codeblock:{"""
 package FairGrounds.Presentation;
 
 import FairGrounds.Application.ApplicationService;
@@ -250,5 +250,5 @@ public class ApplicationController {
     }
 }
 
-}
+"""}
 }

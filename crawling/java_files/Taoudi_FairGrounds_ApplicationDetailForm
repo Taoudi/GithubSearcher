@@ -1,7 +1,7 @@
-{ url:https://raw.githubusercontent.com/Taoudi/FairGrounds/master/src/main/java/FairGrounds/Presentation/ApplicationDetailForm.java
-,
-functions:[{ access_modifier:public, return_type:Application, method_name:getApplication, parameters:[] }, { access_modifier:public, return_type:void, method_name:setApplication, parameters:[{ type:Application, name:application}] }],
-codeblock:{
+{ url:https://raw.githubusercontent.com/Taoudi/FairGrounds/master/src/main/java/FairGrounds/Presentation/ApplicationDetailForm.java,
+functions:[{ access_modifier:public, return_type:Application, method_name:getApplication, parameters:[] },
+ { access_modifier:public, return_type:void, method_name:setApplication, parameters:[{ type:Application, name:application}] }],
+codeblock:{"""
 package FairGrounds.Presentation;
 
 import FairGrounds.Domain.Application;
@@ -25,5 +25,5 @@ public class ApplicationDetailForm {
     }
 }
 
-}
+"""}
 }

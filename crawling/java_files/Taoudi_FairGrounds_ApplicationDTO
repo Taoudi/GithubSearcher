@@ -1,7 +1,13 @@
-{ url:https://raw.githubusercontent.com/Taoudi/FairGrounds/master/src/main/java/FairGrounds/Domain/ApplicationDTO.java
-,
-functions:[{ access_modifier:public, return_type:Long, method_name:getId, parameters:[] }, { access_modifier:public, return_type:String, method_name:getFname, parameters:[] }, { access_modifier:public, return_type:String, method_name:getLname, parameters:[] }, { access_modifier:public, return_type:Date, method_name:getApplicationDate, parameters:[] }, { access_modifier:public, return_type:void, method_name:setFname, parameters:[{ type:String, name:fname}] }, { access_modifier:public, return_type:void, method_name:setId, parameters:[{ type:Long, name:id}] }, { access_modifier:public, return_type:void, method_name:setLname, parameters:[{ type:String, name:lname}] }, { access_modifier:public, return_type:void, method_name:setApplicationDate, parameters:[{ type:Date, name:applicationDate}] }],
-codeblock:{
+{ url:https://raw.githubusercontent.com/Taoudi/FairGrounds/master/src/main/java/FairGrounds/Domain/ApplicationDTO.java,
+functions:[{ access_modifier:public, return_type:Long, method_name:getId, parameters:[] },
+ { access_modifier:public, return_type:String, method_name:getFname, parameters:[] },
+ { access_modifier:public, return_type:String, method_name:getLname, parameters:[] },
+ { access_modifier:public, return_type:Date, method_name:getApplicationDate, parameters:[] },
+ { access_modifier:public, return_type:void, method_name:setFname, parameters:[{ type:String, name:fname}] },
+ { access_modifier:public, return_type:void, method_name:setId, parameters:[{ type:Long, name:id}] },
+ { access_modifier:public, return_type:void, method_name:setLname, parameters:[{ type:String, name:lname}] },
+ { access_modifier:public, return_type:void, method_name:setApplicationDate, parameters:[{ type:Date, name:applicationDate}] }],
+codeblock:{"""
 package FairGrounds.Domain;
 
 import java.util.Date;
@@ -51,5 +57,5 @@ public class ApplicationDTO {
 
 }
 
-}
+"""}
 }

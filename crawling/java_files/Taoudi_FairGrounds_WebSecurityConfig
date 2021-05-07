@@ -1,7 +1,9 @@
-{ url:https://raw.githubusercontent.com/Taoudi/FairGrounds/master/src/main/java/FairGrounds/Config/WebSecurityConfig.java
-,
-functions:[{ access_modifier:protected, return_type:void, method_name:configure, parameters:[{ type:HttpSecurity, name:http}] }, { access_modifier:public, return_type:BCryptPasswordEncoder, method_name:passwordEncoder, parameters:[] }, { access_modifier:public, return_type:DaoAuthenticationProvider, method_name:authenticationProvider, parameters:[] }, { access_modifier:protected, return_type:void, method_name:configure, parameters:[{ type:AuthenticationManagerBuilder, name:auth}] }],
-codeblock:{
+{ url:https://raw.githubusercontent.com/Taoudi/FairGrounds/master/src/main/java/FairGrounds/Config/WebSecurityConfig.java,
+functions:[{ access_modifier:protected, return_type:void, method_name:configure, parameters:[{ type:HttpSecurity, name:http}] },
+ { access_modifier:public, return_type:BCryptPasswordEncoder, method_name:passwordEncoder, parameters:[] },
+ { access_modifier:public, return_type:DaoAuthenticationProvider, method_name:authenticationProvider, parameters:[] },
+ { access_modifier:protected, return_type:void, method_name:configure, parameters:[{ type:AuthenticationManagerBuilder, name:auth}] }],
+codeblock:{"""
 package FairGrounds.Config;
 
 
@@ -95,5 +97,5 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     }
 }
 
-}
+"""}
 }

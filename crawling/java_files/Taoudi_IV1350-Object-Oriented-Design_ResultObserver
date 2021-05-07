@@ -1,7 +1,6 @@
-{ url:https://raw.githubusercontent.com/Taoudi/IV1350-Object-Oriented-Design/master/src/se/kth/iv1305/vehicleinspection/integration/ResultObserver.java
-,
+{ url:https://raw.githubusercontent.com/Taoudi/IV1350-Object-Oriented-Design/master/src/se/kth/iv1305/vehicleinspection/integration/ResultObserver.java,
 functions:[{ access_modifier:, return_type:void, method_name:newResult, parameters:[{ type:Result, name:result}] }],
-codeblock:{
+codeblock:{"""
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -27,5 +26,5 @@ public interface ResultObserver {
     void newResult(Result result);
 }
 
-}
+"""}
 }

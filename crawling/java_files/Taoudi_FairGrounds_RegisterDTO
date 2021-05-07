@@ -1,7 +1,17 @@
-{ url:https://raw.githubusercontent.com/Taoudi/FairGrounds/master/src/main/java/FairGrounds/Presentation/RegisterDTO.java
-,
-functions:[{ access_modifier:public, return_type:String, method_name:getUserName, parameters:[] }, { access_modifier:public, return_type:String, method_name:getUserPwd, parameters:[] }, { access_modifier:public, return_type:String, method_name:getfName, parameters:[] }, { access_modifier:public, return_type:String, method_name:getlName, parameters:[] }, { access_modifier:public, return_type:String, method_name:getUserSsnr, parameters:[] }, { access_modifier:public, return_type:String, method_name:getEmail, parameters:[] }, { access_modifier:public, return_type:void, method_name:setUserName, parameters:[{ type:String, name:userName}] }, { access_modifier:public, return_type:void, method_name:setUserPwd, parameters:[{ type:String, name:userPwd}] }, { access_modifier:public, return_type:void, method_name:setfName, parameters:[{ type:String, name:fName}] }, { access_modifier:public, return_type:void, method_name:setlName, parameters:[{ type:String, name:lName}] }, { access_modifier:public, return_type:void, method_name:setUserSsnr, parameters:[{ type:String, name:userSsnr}] }, { access_modifier:public, return_type:void, method_name:setEmail, parameters:[{ type:String, name:email}] }],
-codeblock:{
+{ url:https://raw.githubusercontent.com/Taoudi/FairGrounds/master/src/main/java/FairGrounds/Presentation/RegisterDTO.java,
+functions:[{ access_modifier:public, return_type:String, method_name:getUserName, parameters:[] },
+ { access_modifier:public, return_type:String, method_name:getUserPwd, parameters:[] },
+ { access_modifier:public, return_type:String, method_name:getfName, parameters:[] },
+ { access_modifier:public, return_type:String, method_name:getlName, parameters:[] },
+ { access_modifier:public, return_type:String, method_name:getUserSsnr, parameters:[] },
+ { access_modifier:public, return_type:String, method_name:getEmail, parameters:[] },
+ { access_modifier:public, return_type:void, method_name:setUserName, parameters:[{ type:String, name:userName}] },
+ { access_modifier:public, return_type:void, method_name:setUserPwd, parameters:[{ type:String, name:userPwd}] },
+ { access_modifier:public, return_type:void, method_name:setfName, parameters:[{ type:String, name:fName}] },
+ { access_modifier:public, return_type:void, method_name:setlName, parameters:[{ type:String, name:lName}] },
+ { access_modifier:public, return_type:void, method_name:setUserSsnr, parameters:[{ type:String, name:userSsnr}] },
+ { access_modifier:public, return_type:void, method_name:setEmail, parameters:[{ type:String, name:email}] }],
+codeblock:{"""
 package FairGrounds.Presentation;
 
 import javax.validation.constraints.*;
@@ -87,5 +97,5 @@ public class RegisterDTO {
     }
 }
 
-}
+"""}
 }

@@ -1,7 +1,6 @@
-{ url:https://raw.githubusercontent.com/Taoudi/FairGrounds/master/src/main/java/FairGrounds/Domain/IllegalApplicationException.java
-,
+{ url:https://raw.githubusercontent.com/Taoudi/FairGrounds/master/src/main/java/FairGrounds/Domain/IllegalApplicationException.java,
 functions:[],
-codeblock:{
+codeblock:{"""
 
 package FairGrounds.Domain;
 
@@ -15,5 +14,5 @@ public class IllegalApplicationException extends Exception {
 }
 
 
-}
+"""}
 }

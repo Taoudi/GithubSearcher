@@ -1,7 +1,6 @@
-{ url:https://raw.githubusercontent.com/Taoudi/IV1350-Object-Oriented-Design/master/src/se/kth/iv1305/vehicleinspection/integration/PaymentAuthorizationSystem.java
-,
+{ url:https://raw.githubusercontent.com/Taoudi/IV1350-Object-Oriented-Design/master/src/se/kth/iv1305/vehicleinspection/integration/PaymentAuthorizationSystem.java,
 functions:[{ access_modifier:public, return_type:boolean, method_name:authorizePayment, parameters:[{ type:CardDTO, name:card}, { type:Amount, name:amount}] }],
-codeblock:{
+codeblock:{"""
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -31,5 +30,5 @@ public class PaymentAuthorizationSystem {
     }
 }
 
-}
+"""}
 }

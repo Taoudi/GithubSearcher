@@ -1,7 +1,9 @@
-{ url:https://raw.githubusercontent.com/Taoudi/FairGrounds/master/src/main/java/FairGrounds/Presentation/ExceptionHandlers.java
-,
-functions:[{ access_modifier:public, return_type:String, method_name:getErrorPath, parameters:[] }, { access_modifier:public, return_type:String, method_name:handleException, parameters:[{ type:Exception, name:exception}, { type:Model, name:model}] }, { access_modifier:public, return_type:String, method_name:pageNotFound, parameters:[{ type:Exception, name:exception}, { type:Model, name:model}] }, { access_modifier:public, return_type:String, method_name:ApplicationError, parameters:[{ type:Exception, name:exception}, { type:Model, name:model}] }],
-codeblock:{
+{ url:https://raw.githubusercontent.com/Taoudi/FairGrounds/master/src/main/java/FairGrounds/Presentation/ExceptionHandlers.java,
+functions:[{ access_modifier:public, return_type:String, method_name:getErrorPath, parameters:[] },
+ { access_modifier:public, return_type:String, method_name:handleException, parameters:[{ type:Exception, name:exception}, { type:Model, name:model}] },
+ { access_modifier:public, return_type:String, method_name:pageNotFound, parameters:[{ type:Exception, name:exception}, { type:Model, name:model}] },
+ { access_modifier:public, return_type:String, method_name:ApplicationError, parameters:[{ type:Exception, name:exception}, { type:Model, name:model}] }],
+codeblock:{"""
 package FairGrounds.Presentation;
 
 
@@ -84,5 +86,5 @@ public class ExceptionHandlers implements ErrorController{
     }
 }
 
-}
+"""}
 }

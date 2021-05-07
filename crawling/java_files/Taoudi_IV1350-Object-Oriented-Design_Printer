@@ -1,7 +1,7 @@
-{ url:https://raw.githubusercontent.com/Taoudi/IV1350-Object-Oriented-Design/master/src/se/kth/iv1305/vehicleinspection/integration/Printer.java
-,
-functions:[{ access_modifier:public, return_type:void, method_name:printReceipt, parameters:[{ type:Receipt, name:receipt}] }, { access_modifier:public, return_type:void, method_name:printPrintout, parameters:[{ type:VehicleDTO, name:vehicle}, { type:Printout, name:printout}] }],
-codeblock:{
+{ url:https://raw.githubusercontent.com/Taoudi/IV1350-Object-Oriented-Design/master/src/se/kth/iv1305/vehicleinspection/integration/Printer.java,
+functions:[{ access_modifier:public, return_type:void, method_name:printReceipt, parameters:[{ type:Receipt, name:receipt}] },
+ { access_modifier:public, return_type:void, method_name:printPrintout, parameters:[{ type:VehicleDTO, name:vehicle}, { type:Printout, name:printout}] }],
+codeblock:{"""
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -46,5 +46,5 @@ public class Printer {
     }
 }
 
-}
+"""}
 }

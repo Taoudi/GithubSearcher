@@ -1,7 +1,15 @@
-{ url:https://raw.githubusercontent.com/Taoudi/FairGrounds/master/src/main/java/FairGrounds/Presentation/ApplicationSearchForm.java
-,
-functions:[{ access_modifier:public, return_type:String, method_name:getName, parameters:[] }, { access_modifier:public, return_type:Date, method_name:getAppDate, parameters:[] }, { access_modifier:public, return_type:Date, method_name:getWorkAvailabilityFrom, parameters:[] }, { access_modifier:public, return_type:Date, method_name:getWorkAvailabilityTo, parameters:[] }, { access_modifier:public, return_type:String, method_name:getExpertise, parameters:[] }, { access_modifier:public, return_type:void, method_name:setName, parameters:[{ type:String, name:name}] }, { access_modifier:public, return_type:void, method_name:setExpertise, parameters:[{ type:String, name:expertise}] }, { access_modifier:public, return_type:void, method_name:setAppDate, parameters:[{ type:Date, name:appDate}] }, { access_modifier:public, return_type:void, method_name:setWorkAvailabilityFrom, parameters:[{ type:Date, name:workAvailabilityFrom}] }, { access_modifier:public, return_type:void, method_name:setWorkAvailabilityTo, parameters:[{ type:Date, name:workAvailabilityTo}] }],
-codeblock:{
+{ url:https://raw.githubusercontent.com/Taoudi/FairGrounds/master/src/main/java/FairGrounds/Presentation/ApplicationSearchForm.java,
+functions:[{ access_modifier:public, return_type:String, method_name:getName, parameters:[] },
+ { access_modifier:public, return_type:Date, method_name:getAppDate, parameters:[] },
+ { access_modifier:public, return_type:Date, method_name:getWorkAvailabilityFrom, parameters:[] },
+ { access_modifier:public, return_type:Date, method_name:getWorkAvailabilityTo, parameters:[] },
+ { access_modifier:public, return_type:String, method_name:getExpertise, parameters:[] },
+ { access_modifier:public, return_type:void, method_name:setName, parameters:[{ type:String, name:name}] },
+ { access_modifier:public, return_type:void, method_name:setExpertise, parameters:[{ type:String, name:expertise}] },
+ { access_modifier:public, return_type:void, method_name:setAppDate, parameters:[{ type:Date, name:appDate}] },
+ { access_modifier:public, return_type:void, method_name:setWorkAvailabilityFrom, parameters:[{ type:Date, name:workAvailabilityFrom}] },
+ { access_modifier:public, return_type:void, method_name:setWorkAvailabilityTo, parameters:[{ type:Date, name:workAvailabilityTo}] }],
+codeblock:{"""
 package FairGrounds.Presentation;
 
 import org.springframework.context.annotation.Scope;
@@ -56,5 +64,5 @@ public class ApplicationSearchForm {
     }
 }
 
-}
+"""}
 }

@@ -1,7 +1,6 @@
-{ url:https://raw.githubusercontent.com/Taoudi/FairGrounds/master/src/main/java/FairGrounds/Application/ApplicationSearchService.java
-,
+{ url:https://raw.githubusercontent.com/Taoudi/FairGrounds/master/src/main/java/FairGrounds/Application/ApplicationSearchService.java,
 functions:[{ access_modifier:public, return_type:Page<Application>, method_name:getQueriedApplications, parameters:[{ type:String, name:name}, { type:String, name:expertise}, { type:Date, name:appDate}, { type:Date, name:workFrom}, { type:Date, name:workTo}, { type:Pageable, name:pageable}] }],
-codeblock:{
+codeblock:{"""
 package FairGrounds.Application;
 
 import FairGrounds.Domain.*;
@@ -40,5 +39,5 @@ public class ApplicationSearchService {
     }
 }
 
-}
+"""}
 }

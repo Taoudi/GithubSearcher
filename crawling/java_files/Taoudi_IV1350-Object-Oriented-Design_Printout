@@ -1,7 +1,8 @@
-{ url:https://raw.githubusercontent.com/Taoudi/IV1350-Object-Oriented-Design/master/src/se/kth/iv1305/vehicleinspection/model/Printout.java
-,
-functions:[{ access_modifier:public, return_type:ArrayList<String>, method_name:getTextList, parameters:[] }, { access_modifier:private, return_type:void, method_name:setList, parameters:[{ type:InspectionCatalog, name:inspectionCatalog}] }, { access_modifier:public, return_type:String, method_name:toString, parameters:[{ type:VehicleDTO, name:vehicle}] }],
-codeblock:{
+{ url:https://raw.githubusercontent.com/Taoudi/IV1350-Object-Oriented-Design/master/src/se/kth/iv1305/vehicleinspection/model/Printout.java,
+functions:[{ access_modifier:public, return_type:ArrayList<String>, method_name:getTextList, parameters:[] },
+ { access_modifier:private, return_type:void, method_name:setList, parameters:[{ type:InspectionCatalog, name:inspectionCatalog}] },
+ { access_modifier:public, return_type:String, method_name:toString, parameters:[{ type:VehicleDTO, name:vehicle}] }],
+codeblock:{"""
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -65,5 +66,5 @@ public final class Printout {
     }
 }
 
-}
+"""}
 }

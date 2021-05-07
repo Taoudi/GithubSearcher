@@ -1,7 +1,10 @@
-{ url:https://raw.githubusercontent.com/Taoudi/IV1350-Object-Oriented-Design/master/src/se/kth/iv1305/vehicleinspection/model/VehicleDTO.java
-,
-functions:[{ access_modifier:public, return_type:int, method_name:getListSize, parameters:[] }, { access_modifier:public, return_type:String, method_name:getRegNumber, parameters:[] }, { access_modifier:private, return_type:void, method_name:addParts, parameters:[] }, { access_modifier:public, return_type:VehiclePart, method_name:findPart, parameters:[] }, { access_modifier:public, return_type:ArrayList<VehiclePart>, method_name:getListOfParts, parameters:[] }],
-codeblock:{
+{ url:https://raw.githubusercontent.com/Taoudi/IV1350-Object-Oriented-Design/master/src/se/kth/iv1305/vehicleinspection/model/VehicleDTO.java,
+functions:[{ access_modifier:public, return_type:int, method_name:getListSize, parameters:[] },
+ { access_modifier:public, return_type:String, method_name:getRegNumber, parameters:[] },
+ { access_modifier:private, return_type:void, method_name:addParts, parameters:[] },
+ { access_modifier:public, return_type:VehiclePart, method_name:findPart, parameters:[] },
+ { access_modifier:public, return_type:ArrayList<VehiclePart>, method_name:getListOfParts, parameters:[] }],
+codeblock:{"""
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -75,5 +78,5 @@ public final class VehicleDTO {
     }
 }
 
-}
+"""}
 }

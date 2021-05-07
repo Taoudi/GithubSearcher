@@ -1,7 +1,8 @@
-{ url:https://raw.githubusercontent.com/Taoudi/IV1350-Object-Oriented-Design/master/src/se/kth/iv1305/vehicleinspection/view/InspectionStatsView.java
-,
-functions:[{ access_modifier:public, return_type:void, method_name:newResult, parameters:[{ type:Result, name:result}] }, { access_modifier:private, return_type:void, method_name:updateResults, parameters:[{ type:Result, name:result}] }, { access_modifier:private, return_type:void, method_name:printCurrentState, parameters:[] }],
-codeblock:{
+{ url:https://raw.githubusercontent.com/Taoudi/IV1350-Object-Oriented-Design/master/src/se/kth/iv1305/vehicleinspection/view/InspectionStatsView.java,
+functions:[{ access_modifier:public, return_type:void, method_name:newResult, parameters:[{ type:Result, name:result}] },
+ { access_modifier:private, return_type:void, method_name:updateResults, parameters:[{ type:Result, name:result}] },
+ { access_modifier:private, return_type:void, method_name:printCurrentState, parameters:[] }],
+codeblock:{"""
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -47,5 +48,5 @@ class InspectionStatsView implements ResultObserver {
     }
 }
 
-}
+"""}
 }

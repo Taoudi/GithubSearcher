@@ -1,7 +1,8 @@
-{ url:https://raw.githubusercontent.com/Taoudi/FairGrounds/master/src/main/java/FairGrounds/Presentation/ApplicationExpertiseFormValidator.java
-,
-functions:[{ access_modifier:public, return_type:boolean, method_name:supports, parameters:[{ type:Class, name:clazz}] }, { access_modifier:public, return_type:void, method_name:validate, parameters:[{ type:Object, name:obj}, { type:Errors, name:e}] }, { access_modifier:private, return_type:void, method_name:checkProfiles, parameters:[{ type:Errors, name:e}, { type:ApplicationForm, name:form}] }],
-codeblock:{
+{ url:https://raw.githubusercontent.com/Taoudi/FairGrounds/master/src/main/java/FairGrounds/Presentation/ApplicationExpertiseFormValidator.java,
+functions:[{ access_modifier:public, return_type:boolean, method_name:supports, parameters:[{ type:Class, name:clazz}] },
+ { access_modifier:public, return_type:void, method_name:validate, parameters:[{ type:Object, name:obj}, { type:Errors, name:e}] },
+ { access_modifier:private, return_type:void, method_name:checkProfiles, parameters:[{ type:Errors, name:e}, { type:ApplicationForm, name:form}] }],
+codeblock:{"""
 package FairGrounds.Presentation;
 
 import FairGrounds.Domain.Availability;
@@ -56,5 +57,5 @@ public class ApplicationExpertiseFormValidator implements Validator {
     }
 }
 
-}
+"""}
 }

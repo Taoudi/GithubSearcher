@@ -1,7 +1,7 @@
-{ url:https://raw.githubusercontent.com/Taoudi/IV1350-Object-Oriented-Design/master/src/se/kth/iv1305/vehicleinspection/view/View.java
-,
-functions:[{ access_modifier:public, return_type:void, method_name:sampleExecution, parameters:[] }, { access_modifier:private, return_type:void, method_name:handleException, parameters:[{ type:String, name:uiMsg}, { type:Exception, name:exc}] }],
-codeblock:{
+{ url:https://raw.githubusercontent.com/Taoudi/IV1350-Object-Oriented-Design/master/src/se/kth/iv1305/vehicleinspection/view/View.java,
+functions:[{ access_modifier:public, return_type:void, method_name:sampleExecution, parameters:[] },
+ { access_modifier:private, return_type:void, method_name:handleException, parameters:[{ type:String, name:uiMsg}, { type:Exception, name:exc}] }],
+codeblock:{"""
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -107,5 +107,5 @@ public class View {
     }
 }
 
-}
+"""}
 }

@@ -1,7 +1,6 @@
-{ url:https://raw.githubusercontent.com/Taoudi/FairGrounds/master/src/main/java/FairGrounds/Repository/AvailabilityRepository.java
-,
+{ url:https://raw.githubusercontent.com/Taoudi/FairGrounds/master/src/main/java/FairGrounds/Repository/AvailabilityRepository.java,
 functions:[{ access_modifier:, return_type:List<Availability>, method_name:findAll, parameters:[] }],
-codeblock:{
+codeblock:{"""
 package FairGrounds.Repository;
 
 import FairGrounds.Domain.Availability;
@@ -24,5 +23,5 @@ public interface AvailabilityRepository extends JpaRepository<Availability, Long
     List<Availability> findAll();
 }
 
-}
+"""}
 }

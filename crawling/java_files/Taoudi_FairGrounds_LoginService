@@ -1,7 +1,8 @@
-{ url:https://raw.githubusercontent.com/Taoudi/FairGrounds/master/src/main/java/FairGrounds/Application/LoginService.java
-,
-functions:[{ access_modifier:public, return_type:UserDetails, method_name:loadUserByUsername, parameters:[{ type:String, name:username}] }, { access_modifier:public, return_type:Person, method_name:findUserAccount, parameters:[{ type:RegisterDTO, name:registerDTO}] }, { access_modifier:public, return_type:Person, method_name:saveNewUser, parameters:[{ type:RegisterDTO, name:registerDTO}] }],
-codeblock:{
+{ url:https://raw.githubusercontent.com/Taoudi/FairGrounds/master/src/main/java/FairGrounds/Application/LoginService.java,
+functions:[{ access_modifier:public, return_type:UserDetails, method_name:loadUserByUsername, parameters:[{ type:String, name:username}] },
+ { access_modifier:public, return_type:Person, method_name:findUserAccount, parameters:[{ type:RegisterDTO, name:registerDTO}] },
+ { access_modifier:public, return_type:Person, method_name:saveNewUser, parameters:[{ type:RegisterDTO, name:registerDTO}] }],
+codeblock:{"""
 package FairGrounds.Application;
 
 import FairGrounds.Domain.Person;
@@ -70,5 +71,5 @@ public class LoginService implements UserDetailsService {
     }
 }
 
-}
+"""}
 }

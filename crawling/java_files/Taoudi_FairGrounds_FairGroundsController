@@ -1,7 +1,9 @@
-{ url:https://raw.githubusercontent.com/Taoudi/FairGrounds/master/src/main/java/FairGrounds/Presentation/FairGroundsController.java
-,
-functions:[{ access_modifier:public, return_type:String, method_name:showDefaultView, parameters:[{ type:Model, name:model}] }, { access_modifier:public, return_type:String, method_name:showHomeView, parameters:[{ type:Model, name:model}] }, { access_modifier:public, return_type:void, method_name:initBinder, parameters:[{ type:WebDataBinder, name:binder}] }, { access_modifier:private, return_type:void, method_name:getQueriedApplications, parameters:[{ type:String, name:name}, { type:String, name:expertise}, { type:Date, name:applicationDate}, { type:Date, name:fromDate}, { type:Date, name:toDate}, { type:Pageable, name:pageable}, { type:Model, name:model}, { type:Boolean, name:startPage}] }],
-codeblock:{
+{ url:https://raw.githubusercontent.com/Taoudi/FairGrounds/master/src/main/java/FairGrounds/Presentation/FairGroundsController.java,
+functions:[{ access_modifier:public, return_type:String, method_name:showDefaultView, parameters:[{ type:Model, name:model}] },
+ { access_modifier:public, return_type:String, method_name:showHomeView, parameters:[{ type:Model, name:model}] },
+ { access_modifier:public, return_type:void, method_name:initBinder, parameters:[{ type:WebDataBinder, name:binder}] },
+ { access_modifier:private, return_type:void, method_name:getQueriedApplications, parameters:[{ type:String, name:name}, { type:String, name:expertise}, { type:Date, name:applicationDate}, { type:Date, name:fromDate}, { type:Date, name:toDate}, { type:Pageable, name:pageable}, { type:Model, name:model}, { type:Boolean, name:startPage}] }],
+codeblock:{"""
 package FairGrounds.Presentation;
 
 import FairGrounds.Application.ApplicationSearchService;
@@ -154,5 +156,5 @@ public class FairGroundsController {
     }
 }
 
-}
+"""}
 }

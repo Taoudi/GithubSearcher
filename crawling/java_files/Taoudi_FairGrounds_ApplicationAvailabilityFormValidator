@@ -1,7 +1,8 @@
-{ url:https://raw.githubusercontent.com/Taoudi/FairGrounds/master/src/main/java/FairGrounds/Presentation/ApplicationAvailabilityFormValidator.java
-,
-functions:[{ access_modifier:public, return_type:boolean, method_name:supports, parameters:[{ type:Class, name:clazz}] }, { access_modifier:public, return_type:void, method_name:validate, parameters:[{ type:Object, name:o}, { type:Errors, name:errors}] }, { access_modifier:private, return_type:void, method_name:checkAvailabilities, parameters:[{ type:Errors, name:e}, { type:ApplicationForm, name:form}] }],
-codeblock:{
+{ url:https://raw.githubusercontent.com/Taoudi/FairGrounds/master/src/main/java/FairGrounds/Presentation/ApplicationAvailabilityFormValidator.java,
+functions:[{ access_modifier:public, return_type:boolean, method_name:supports, parameters:[{ type:Class, name:clazz}] },
+ { access_modifier:public, return_type:void, method_name:validate, parameters:[{ type:Object, name:o}, { type:Errors, name:errors}] },
+ { access_modifier:private, return_type:void, method_name:checkAvailabilities, parameters:[{ type:Errors, name:e}, { type:ApplicationForm, name:form}] }],
+codeblock:{"""
 package FairGrounds.Presentation;
 
 import FairGrounds.Domain.Availability;
@@ -54,5 +55,5 @@ public class ApplicationAvailabilityFormValidator implements Validator {
     }
 }
 
-}
+"""}
 }

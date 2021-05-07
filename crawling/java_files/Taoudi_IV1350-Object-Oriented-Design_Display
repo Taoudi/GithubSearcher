@@ -1,7 +1,8 @@
-{ url:https://raw.githubusercontent.com/Taoudi/IV1350-Object-Oriented-Design/master/src/se/kth/iv1305/vehicleinspection/model/garage/Display.java
-,
-functions:[{ access_modifier:public, static: True, return_type:Display, method_name:getDisplay, parameters:[] }, { access_modifier:, return_type:void, method_name:nextNumber, parameters:[] }, { access_modifier:private, return_type:void, method_name:contactDisplay, parameters:[] }],
-codeblock:{
+{ url:https://raw.githubusercontent.com/Taoudi/IV1350-Object-Oriented-Design/master/src/se/kth/iv1305/vehicleinspection/model/garage/Display.java,
+functions:[{ access_modifier:public, static: True, return_type:Display, method_name:getDisplay, parameters:[] },
+ { access_modifier:, return_type:void, method_name:nextNumber, parameters:[] },
+ { access_modifier:private, return_type:void, method_name:contactDisplay, parameters:[] }],
+codeblock:{"""
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -57,5 +58,5 @@ class Display {
     }
 }
 
-}
+"""}
 }
