@@ -1,6 +1,6 @@
 { url:https://raw.githubusercontent.com/Taoudi/FairGrounds/master/src/main/java/FairGrounds/Repository/PersonRepository.java
 ,
-functions:[],
+functions:[{ access_modifier:, return_type:Person, method_name:findByUsername, parameters:[{ type:String, name:Username}] }, { access_modifier:, return_type:Person, method_name:save, parameters:[{ type:Person, name:person}] }],
 codeblock:{
 package FairGrounds.Repository;
 

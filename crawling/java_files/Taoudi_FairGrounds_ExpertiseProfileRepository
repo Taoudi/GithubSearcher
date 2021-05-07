@@ -1,6 +1,6 @@
 { url:https://raw.githubusercontent.com/Taoudi/FairGrounds/master/src/main/java/FairGrounds/Repository/ExpertiseProfileRepository.java
 ,
-functions:[],
+functions:[{ access_modifier:, return_type:List<ExpertiseProfile>, method_name:findAll, parameters:[] }],
 codeblock:{
 package FairGrounds.Repository;
 

@@ -1,6 +1,6 @@
 { url:https://raw.githubusercontent.com/Taoudi/IV1350-Object-Oriented-Design/master/src/se/kth/iv1305/vehicleinspection/integration/ResultObserver.java
 ,
-functions:[],
+functions:[{ access_modifier:, return_type:void, method_name:newResult, parameters:[{ type:Result, name:result}] }],
 codeblock:{
 /*
  * To change this license header, choose License Headers in Project Properties.
