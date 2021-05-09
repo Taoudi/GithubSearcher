@@ -2,3 +2,4 @@ venv/
 elasticsearch/
 .vscode/
 crawling/credentials
+crawling/java_files
