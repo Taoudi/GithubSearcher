@@ -78,7 +78,7 @@ class Indexer:
                 #for i, name in enumerate(name):
                 #d = dict()
                 jsoned = {
-                        'codeblock':'"""'+c.codeblock+'"""',
+                        'codeblock':'c.codeblock',
                         'url':c.url,
                         'method_or_class':'class',
                         'name':javafilename,
@@ -111,18 +111,19 @@ class Indexer:
 
 
 if __name__ == "__main__":
-    #i = Indexer()
-    #data = i.fetch_data()  
-    #print(len(data), "files parsed")
-    #i.index(data)
+    i = Indexer()
+    data = i.fetch_data()  
+    print(len(data), "files parsed")
+    i.index(data)
 
-    es = Elasticsearch()
+    """es = Elasticsearch()
     res = es.search(
         index="javafiles",
         size=1000,
         request_timeout=1000  # type error!
     )
     print("Got ",res['hits']['total']['value'], "hits")
-    for i in res['hits']['hits']:
-        print(i['_source']['url'])
-        #break
+    real_res = [ j['_source'] for j in  res['hits']['hits']]
+    for i in real_res:
+        print(i['name'])
+        #break"""
