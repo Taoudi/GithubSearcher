@@ -26,6 +26,43 @@ For setting up a Kibana server to act as an interface for the ElasticSearch serv
 folder at: https://www.elastic.co/downloads/kibana. Once downloaded, the Kibana server can be started by running the executable file
 in bin (kibana.bat in Windows). The Kibana server is default located at http://localhost:5601/.
 
+Setting up the Index for ElasticSearch in Kibana
+```
+DELETE javafiles
+
+PUT javafiles
+{
+  "settings": {
+    "analysis": {
+      "analyzer": {
+        "my_custom_analyzer": {
+          "type": "custom", 
+          "tokenizer": {
+              "custom_tokenizer": {
+                  "type": "ngram",
+                      "min_gram": 2,
+                      "max_gram": 30,
+                      "token_chars": [
+                          "letter",
+                          "digit",
+                          "symbol",
+                          "punctuation"
+                        ]
+               }
+          },
+          "char_filter": [
+            "html_strip"
+          ],
+          "filter": [
+            "lowercase",
+            "asciifolding"
+          ]
+        }
+      }
+    }
+  }
+  ```
+
 #### Indexing with ElasticSearch
 Every object indexed into the ElasticSearch Server will be a JSON Object with the following variables:
 ```
