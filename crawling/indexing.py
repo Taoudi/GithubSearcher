@@ -78,7 +78,7 @@ class Indexer:
                 #for i, name in enumerate(name):
                 #d = dict()
                 jsoned = {
-                        'codeblock':'"""'+c.codeblock+'"""',
+                        'codeblock':c.codeblock,
                         'url':c.url,
                         'method_or_class':'class',
                         'name':javafilename,

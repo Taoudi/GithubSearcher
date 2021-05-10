@@ -19,7 +19,9 @@ def query():
         eng = SearchEngine()
         x = dict()
         x['hits'] = eng.get_all_files()
-        output = json.loads(str(x))
+        #with open("example.json",'w') as fp:
+        #    fp.write(str(x))
+        #output = json.loads(str(x))
         output = json.dumps(x)
         output = output.replace('\\', '\\\\')
 
