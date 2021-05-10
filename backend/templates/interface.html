@@ -17,9 +17,25 @@
     <h1 class="display-5 fw-bold">Search Engine</h1>
     <div class="col-12 mx-auto">
          <form method="POST">
-      <label for="query" class = "form-label">Query:</label>
       <input type="text" class = "form-control" id="query" name="query"><br><br>
+
+        <h4 class="mb-3">Search by</h4>
+        <div class="form-check">
+          <input id="name" name="search_by" value="name" type="radio" class="form-check-input" checked="" required="">
+          <label class="form-check-label" for="name">Name</label>
+        </div>
+        <div class="form-check">
+          <input id="methods" name="search_by" value="methods" type="radio" class="form-check-input" required="">
+          <label class="form-check-label" for="methods">Methods</label>
+        </div>
+        <div class="form-check">
+          <input id="name_and_methods" name="search_by" value="name_and_methods" type="radio" class="form-check-input" required="">
+          <label class="form-check-label" for="name_and_methods">Name and Methods</label>
+        </div>
+
       <input type="submit" class="w-100 btn btn-primary btn-lg" value="Search on github">
+
+
     </form>
     
     </div>
@@ -30,8 +46,7 @@
           <tr>
             <th>Name</th>
             <th>Url</th>
-            <th>Method or class</th>
-            <th>Codeblock</th>
+            <th>Methods</th>
           </tr>
         </thead>
         <tbody id="results">
