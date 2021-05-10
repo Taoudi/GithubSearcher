@@ -19,13 +19,17 @@ def query():
         query = request.form['query']
         # Search by : 3 possible values: "name", "methods", "name_and_methods"
         search_by = request.form['search_by']
-        
+
         eng = SearchEngine()
         x = dict()
-        x['hits'] = eng.get_all_files()
-        #with open("example.json",'w') as fp:
-        #    fp.write(str(x))
-        #output = json.loads(str(x))
+
+        field = search_by
+        name =query.lower()
+        print(name, field)
+        if field == "name_and_methods":
+             x['hits'] = eng.search_OR(name)
+        else:
+            x['hits'] = eng.search(name,field)
         output = json.dumps(x)
         output = output.replace('\\', '\\\\')
 
