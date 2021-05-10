@@ -19,17 +19,12 @@ def query():
         eng = SearchEngine()
         x = dict()
         x['hits'] = eng.get_all_files()
-        #with open("example.json",'w') as fp:
-        #    fp.write(str(x))
-        #x= "{'hits' : "+ str(eng.get_all_files()) + "}"
-        #print(eng.get_all_files()[0])
-        #print(x)
         output = json.loads(str(x))
-        #print(output)
-        #print(output)
+        output = json.dumps(x)
+        output = output.replace('\\', '\\\\')
 
 
-        return render_template("interface.html", output = json.dumps(x))
+        return render_template("interface.html", output = output)
 
     else:
         return render_template("interface.html")
