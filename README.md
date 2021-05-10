@@ -24,7 +24,7 @@ in bin (elasticsearch.bat in Windows). The ElasticSearch server is default locat
 #### Setting up Kibana
 For setting up a Kibana server to act as an interface for the ElasticSearch server, download the compressed
 folder at: https://www.elastic.co/downloads/kibana. Once downloaded, the Kibana server can be started by running the executable file
-in bin (elasticsearch.bat in Windows). The Kibana server is default located at http://localhost:5601/.
+in bin (kibana.bat in Windows). The Kibana server is default located at http://localhost:5601/.
 
 #### Indexing with ElasticSearch
 Every object indexed into the ElasticSearch Server will be a JSON Object with the following variables:
@@ -40,9 +40,9 @@ requests sent to the server:
 ```
 PUT file/_bulk
 {"index": {"_index": "<index>", "_type": "<document type>", "_id": "<docID>"}}
-{"name": "name", "url": "url", "method_or_class": "method", "codeblock": "codeblock"}
+{"name": "name", "url": "url", "methods": "method", "codeblock": "codeblock"}
 {"index": {"_index": "<index>", "_type": "<document type>", "_id": "<docID>"}}
-{"name": "name", "url": "url", "method_or_class": "method", "codeblock": "codeblock"}
+{"name": "name", "url": "url", "methods": "method", "codeblock": "codeblock"}
 ...
 ```
 
@@ -56,9 +56,7 @@ POST file/_search
     "bool" : {
       "must": [
         {"term":{"name":"name"}},
-        {"term":{"url": "url"}}
-        {"term":{"method_or_class": "method"}}
-        {"term":{"codeblock": "block of code"}}
+        {"term":{"methods": "method name"}}
       ]
     }
   }
