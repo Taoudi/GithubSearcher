@@ -43,7 +43,7 @@ class Indexer:
             #print(func)
             if not invalid:
                 meth = Method(access_modifier=access_modifier,static=static,return_type=return_type,method_name=method_name,parameters=parameters)
-                methods.append(meth)
+                methods.append(str(meth))
         return methods
 
 
@@ -82,6 +82,7 @@ class Indexer:
                         'url':c.url,
                         'method_or_class':'class',
                         'name':javafilename,
+                        'methods':methods
                     }
                 #d['codeblock'] = c.codeblock
                 #d['url'] = c.url
@@ -111,10 +112,10 @@ class Indexer:
 
 
 if __name__ == "__main__":
-    #i = Indexer()
-    #data = i.fetch_data()  
-    #print(len(data), "files parsed")
-    #i.index(data)
+    i = Indexer()
+    data = i.fetch_data()  
+    print(len(data), "files parsed")
+    i.index(data)
 
     es = Elasticsearch()
     res = es.search(
@@ -125,5 +126,5 @@ if __name__ == "__main__":
     print("Got ",res['hits']['total']['value'], "hits")
     real_res = [ j['_source'] for j in  res['hits']['hits']]
     for i in real_res:
-        print(i['name'])
-        #break"""
+        print(i)
+        break
