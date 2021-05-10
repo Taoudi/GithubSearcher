@@ -12,9 +12,13 @@ app = Flask(__name__)
 def query():
     if request.method == 'POST':
     # MATCH CLASSNAME WITH CODE IN ELASTICSEARCH HERE
-    # I harcoded an answer, now we should put the real hits json in the output
+    
+        # 2 parameters for elasticsearch : query and Search by
 
+        # Query : content of the query
         query = request.form['query']
+        # Search by : 3 possible values: "name", "methods", "name_and_methods"
+        search_by = request.form['search_by']
         
         eng = SearchEngine()
         x = dict()
