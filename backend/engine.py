@@ -17,8 +17,8 @@ class SearchEngine:
         res = self.es.search(index="javafiles", size=100, body={"query": {
             "bool": {
                 "should": [
-                    {"term": {"name": name}},
-                    {"term": {"methods": name}}
+                    {"match": {"name": name}},
+                    {"match": {"methods": name}}
                 ],
             }
         }
