@@ -18,13 +18,14 @@ class SearchEngine:
             "bool": {
                 "should": [
                     {"term": {"name": name}},
-                    {"term": {"methods": name}
-                     }
-                ]
+                    {"term": {"methods": name}}
+                ],
             }
         }
         })
         print(len(res['hits']['hits']))
+        for i in res['hits']['hits']:
+            del i['_source']['codeblock']
         return [j['_source'] for j in res['hits']['hits']]
 
     def search(self, name, field):
