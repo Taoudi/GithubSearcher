@@ -1,5 +1,6 @@
 import re
 import urllib.request
+import time
 
 from elasticsearch import Elasticsearch
 
@@ -51,7 +52,7 @@ class Indexer:
                 methods.append(str(meth))
         return methods
 
-    def get_urls(self, filename="javaurls"):
+    def get_urls(self, filename="javaurls2"):
         ##Pulling the urls from url file
         urls = []
         with open(filename, 'r') as fp:
@@ -64,6 +65,8 @@ class Indexer:
         data = []
         for index, url in enumerate(urls):
             try:
+                if index%100==0:
+                    print(index)
                 # response = http.urlopen('GET',url)
                 # print(url)
                 response = urllib.request.urlopen(url)
@@ -82,7 +85,7 @@ class Indexer:
                 # for i, name in enumerate(name):
                 # d = dict()
                 jsoned = {
-                    'codeblock': c.codeblock,
+                    #'codeblock': c.codeblock,
                     'url': c.url,
                     'method_or_class': 'class',
                     'name': javafilename,
@@ -100,6 +103,8 @@ class Indexer:
                 data.append(jsoned)
             except urllib.error.HTTPError:
                 continue
+            except UnicodeDecodeError:
+                continue
         return data
 
     def index(self, data):
@@ -111,10 +116,13 @@ class Indexer:
 
 
 if __name__ == "__main__":
+    start_time = time.time()
     i = Indexer()
     data = i.fetch_data()
     print(len(data), "files parsed")
     i.index(data)
+    print("--- %s seconds ---" % (time.time() - start_time))
+
 
     es = Elasticsearch()
     res = es.search(
