@@ -87,8 +87,7 @@ Every object indexed into the ElasticSearch Server will be a JSON Object with th
 ```
   "name": "class/function name",
   "url": "website url",
-  "method_or_class": "method, class, none",
-  "codeblock": "block of code corresponding to the function"
+  "methods": "list of methods"
 ```
 
 Indexing via the interface was done through using the match API and put API:
@@ -97,7 +96,7 @@ PUT /<_index>/<_type>/<docID>
 {
   "name": "class/function name",
   "url": "website url",
-  "methods": "list of methods",
+  "methods": "list of methods"
 }
 ...
 ```
