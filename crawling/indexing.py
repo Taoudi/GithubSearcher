@@ -45,7 +45,7 @@ class Indexer:
                     parameter_sets = f.split(",")
                     for pars in parameter_sets:
                         if len(pars) > 1:
-                            parameters.append(Parameter(v_type=pars.split()[0], name=pars.split()[1]))
+                            parameters.append(Parameter(v_type=pars.split()[1], name=pars.split()[0]))
             # print(func)
             if not invalid:
                 meth = Method(access_modifier=access_modifier, static=static, return_type=return_type,
@@ -70,8 +70,7 @@ class Indexer:
         #print(len(os.listdir(directory)))
         for index,filename in enumerate(os.listdir(directory)):
             try:
-                if index%100==0:
-                    print(index)
+               
                 # response = http.urlopen('GET',url)
                 # print(url)
                 """response = urllib.request.urlopen(url)
@@ -88,12 +87,21 @@ class Indexer:
                 
                 temp = f.read().split('\n',1)
                 url = temp[0]
+                if index%100==0:
+                    print(index)
+                if index >2000:
+                    #print(url)
+                    #print(temp[1])
+                    #print("------------------------------------------")
+                    pass
                 clean_url = url.split(".com/")[1]
                 part_url = clean_url.split("/")
                 javafilename = part_url[len(part_url) - 1].replace(".java", "")
                 code = temp[1]#.decode("utf-8")
                 #print(url)
+                #print("yo")
                 methods = self.pre_process(code)
+                #print("yo2")
                 c = Code(methods, code, url)
                 jsoned = {
                     'url': c.url,
@@ -121,7 +129,7 @@ class Indexer:
 
 
 if __name__ == "__main__":
-    iters = 1600
+    iters = 100000
     start_time = time.time()
     i = Indexer()
     data = i.fetch_data(max_iters=iters)
@@ -137,7 +145,7 @@ if __name__ == "__main__":
         request_timeout=1000  # type error!
     )
     print("Got ", res['hits']['total']['value'], "hits")
-    real_res = [j['_source'] for j in res['hits']['hits']]
+    """real_res = [j['_source'] for j in res['hits']['hits']]
     for i in real_res:
         print(i)
-        break
+        break"""

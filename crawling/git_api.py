@@ -37,7 +37,7 @@ class GithubScraper:
                 print(e)
 
     def mass_search(self):
-        repos = self.g.search_repositories(query='language:java, >2015-06-01')
+        repos = self.g.search_repositories(query='language:java, created:>=2021-01-01')
         for repo in repos:
             print(repo)
             print(repo.owner)
@@ -46,5 +46,5 @@ class GithubScraper:
 
 if __name__ == "__main__":
     f = open("credentials", "r")
-    git = GithubScraper(f.readline(), filename="javaurls4")
+    git = GithubScraper(f.readline(), filename="javaurls6")
     git.mass_search()

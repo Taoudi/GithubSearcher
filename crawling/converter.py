@@ -5,7 +5,7 @@ from pathlib import Path
 class Converter:
 
 
-    def get_urls(self, filename="urls/javaurls3"):
+    def get_urls(self, filename="urls/javaurls6"):
         ##Pulling the urls from url file
         urls = []
         with open(filename, 'r') as fp:
