@@ -40,21 +40,24 @@
     
     </div>
     {% if output %}
-    <div class="table-responsive">
-      <table class="table table-striped table-sm">
-        <thead>
-          <tr>
-            <th>Name</th>
-            <th>Methods</th>
-          </tr>
-        </thead>
-        <tbody id="results">
-        <script>
-        get_output();
-        </script>
-        </tbody>
-      </table>
+    <div class="col-12 mx-auto", id = "table_container">
+      <div class="table-responsive">
+        <table class="table table-striped table-sm">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Methods</th>
+            </tr>
+          </thead>
+          <tbody id="results">
+          </tbody>
+        </table>
+      </div>
+      <button class="btn btn-primary btn-lg px-4 me-sm-3" id="seemore" onclick = "add_results();">See more results</button>
     </div>
+    <script>
+      get_output();
+    </script>
     {% endif %}
   </div>
   
