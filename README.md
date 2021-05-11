@@ -1,4 +1,7 @@
-## DD2476 - GithubProject
+## DD2476 - GithubSearcher
+
+### Group Members
+E-Joon Ko, Youssef Taoudi, Nandakishor Prabhu Ramlal, Emile Lucas
 
 ### Indexing
 
@@ -88,14 +91,14 @@ Every object indexed into the ElasticSearch Server will be a JSON Object with th
   "codeblock": "block of code corresponding to the function"
 ```
 
-Indexing via the interface was done through using the bulk API and put API. The bulk API was used to limit the amount of
-requests sent to the server:
+Indexing via the interface was done through using the match API and put API:
 ```
-PUT file/_bulk
-{"index": {"_index": "<index>", "_type": "<document type>", "_id": "<docID>"}}
-{"name": "name", "url": "url", "methods": "method", "codeblock": "codeblock"}
-{"index": {"_index": "<index>", "_type": "<document type>", "_id": "<docID>"}}
-{"name": "name", "url": "url", "methods": "method", "codeblock": "codeblock"}
+PUT /<_index>/<_type>/<docID>
+{
+  "name": "class/function name",
+  "url": "website url",
+  "methods": "list of methods",
+}
 ...
 ```
 
@@ -107,9 +110,9 @@ POST file/_search
 {
   "query": {
     "bool" : {
-      "must": [
-        {"term":{"name":"name"}},
-        {"term":{"methods": "method name"}}
+      "should": [
+        {"match":{"name":"name"}},
+        {"match":{"methods": "method name"}}
       ]
     }
   }
