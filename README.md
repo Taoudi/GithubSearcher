@@ -3,7 +3,8 @@
 ### Indexing
 
 Extract the data.zip file as data
-Run the indexing.bat file (After setting up elasticsearch, see blow)
+
+Run the indexing.bat file (After setting up elasticsearch, see below)
 
 
 
