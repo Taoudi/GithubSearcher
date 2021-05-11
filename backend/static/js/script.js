@@ -1,16 +1,43 @@
 if (typeof output !== 'undefined') {
 var hits = output.hits;}
 
+var lim;
 
 function get_output(){
-    for (i = 0; i < Math.min(hits.length, 10); i++) {
+    // displays the 10 first output of the query
+    lim = 10;
+    for (i = 0; i < Math.min(hits.length, lim); i++) {
         display(hits[i]);
+    }
+    hide_button();
+}
+
+function hide_button(){
+    // hides the button that displays more results if it is unnecessary
+    if (hits.length > lim){
+        document.getElementById('seemore').style.visibility='visible';
+    }
+    else{
+        document.getElementById('seemore').style.visibility='hidden';
     }
 }
 
+function add_results(){
+    // adds results to the list when the button is clicked on
+    for (i = lim; i < Math.min(hits.length, lim + 10); i++) {
+        display(hits[i]);
+    }
+    lim = lim + 10;
+    hide_button();
+}
+
 function display(hit){
-    var results = document.getElementById('results');
+    // displays a retrieved result
+
+    var results = document.getElementById('results'); // get appropriate table
     var tr = document.createElement('tr');
+
+    // add name with url link
 
     var td = document.createElement('td');
     var a = document.createElement('a');
@@ -19,6 +46,8 @@ function display(hit){
     a.appendChild(document.createTextNode(hit.name));
     td.appendChild(a);
     tr.appendChild(td);
+
+    // add functions
 
     var td = document.createElement('td');
     for (j = 0; j < hit.methods.length; j++) {
@@ -32,4 +61,5 @@ function display(hit){
     tr.appendChild(td);
 
     results.appendChild(tr);
+
 }
