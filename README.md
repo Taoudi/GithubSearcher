@@ -98,7 +98,6 @@ PUT /<_index>/<_type>/<docID>
   "url": "website url",
   "methods": "list of methods"
 }
-...
 ```
 
 #### Searching with ElasticSearch
