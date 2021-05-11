@@ -13,14 +13,10 @@ function display(hit){
     var tr = document.createElement('tr');
 
     var td = document.createElement('td');
-    td.appendChild(document.createTextNode(hit.name));
-    tr.appendChild(td);
-
-    var td = document.createElement('td');
     var a = document.createElement('a');
     a.href = hit.url;
     a.target="_blank";
-    a.appendChild(document.createTextNode("Go to code"));
+    a.appendChild(document.createTextNode(hit.name));
     td.appendChild(a);
     tr.appendChild(td);
 
