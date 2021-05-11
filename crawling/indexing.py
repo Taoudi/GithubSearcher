@@ -1,6 +1,7 @@
 import re
 import urllib.request
 import time
+import os
 
 from elasticsearch import Elasticsearch
 
@@ -50,6 +51,8 @@ class Indexer:
                 meth = Method(access_modifier=access_modifier, static=static, return_type=return_type,
                               method_name=method_name, parameters=parameters)
                 methods.append(str(meth))
+                #print(str(meth))
+        #print("-----------------------------")
         return methods
 
     def get_urls(self, filename="javaurls2"):
@@ -60,67 +63,70 @@ class Indexer:
                 urls.append(url)
         return urls
 
-    def fetch_data(self):
-        urls = self.get_urls()
+    def fetch_data(self, max_iters=1000000):
+        #urls = self.get_urls()
         data = []
-        for index, url in enumerate(urls):
+        directory = "data"
+        #print(len(os.listdir(directory)))
+        for index,filename in enumerate(os.listdir(directory)):
             try:
                 if index%100==0:
                     print(index)
                 # response = http.urlopen('GET',url)
                 # print(url)
-                response = urllib.request.urlopen(url)
+                """response = urllib.request.urlopen(url)
                 code = response.read().decode("utf-8")
-                methods = self.pre_process(code)
+                
                 clean_url = url.split(".com/")[1]
                 part_url = clean_url.split("/")
                 username = part_url[0]
                 repo = part_url[1]
+                javafilename = part_url[len(part_url) - 1].replace(".java", "")"""
+                temp = os.path.join(directory, filename)
+                f = open(os.path.join(directory, filename),'r')
+                #print(f.read())
+                
+                temp = f.read().split('\n',1)
+                url = temp[0]
+                clean_url = url.split(".com/")[1]
+                part_url = clean_url.split("/")
                 javafilename = part_url[len(part_url) - 1].replace(".java", "")
-
+                code = temp[1]#.decode("utf-8")
+                #print(url)
+                methods = self.pre_process(code)
                 c = Code(methods, code, url)
-                # print("java_files/"+username+"_"+repo+"_"+javafilename.replace("\n",""))
-                # print(username+"_"+repo+"_"+javafilename)
-                # print(name)
-                # for i, name in enumerate(name):
-                # d = dict()
                 jsoned = {
-                    #'codeblock': c.codeblock,
                     'url': c.url,
                     'method_or_class': 'class',
                     'name': javafilename,
-                    'methods': methods
+                    'methods':methods
                 }
-                # d['codeblock'] = c.codeblock
-                # d['url'] = c.url
-                # d['method_or_class'] = "class"
-                # d['name'] = javafilename
-                # d['_index'] = jsoned
-                # d['_id'] = index
-                # with open("java_files/"+username+"_"+repo+"_"+javafilename.replace("\n",""),'w') as fp:
-                # fp.write(c.jsonify())
-                #    fp.write(str(d))
                 data.append(jsoned)
+                if index >= max_iters:
+                    break
             except urllib.error.HTTPError:
                 continue
             except UnicodeDecodeError:
                 continue
         return data
 
-    def index(self, data):
+    def index(self, data,max_iters=1000000):
         es = Elasticsearch()
 
         for i, node in enumerate(data):
             es.index(index='javafiles', id=i, body=node)
+            if i == max_iters:
+                break
         # helpers.bulk(es,data)
 
 
 if __name__ == "__main__":
+    iters = 1600
     start_time = time.time()
     i = Indexer()
-    data = i.fetch_data()
+    data = i.fetch_data(max_iters=iters)
     print(len(data), "files parsed")
-    i.index(data)
+    i.index(data,max_iters=iters)
     print("--- %s seconds ---" % (time.time() - start_time))
 
 

@@ -24,8 +24,8 @@ class SearchEngine:
         }
         })
         print(len(res['hits']['hits']))
-        for i in res['hits']['hits']:
-            del i['_source']['codeblock']
+        print( [j['_source'] for j in res['hits']['hits']])
+
         return [j['_source'] for j in res['hits']['hits']]
 
     def search(self, name, field):
@@ -33,7 +33,5 @@ class SearchEngine:
             "query": {"match": {str(field): name}}
         })
         print(len(res['hits']['hits']))
-        for i in res['hits']['hits']:
-            del i['_source']['codeblock']
-
+        print( [j['_source'] for j in res['hits']['hits']])
         return [j['_source'] for j in res['hits']['hits']]
