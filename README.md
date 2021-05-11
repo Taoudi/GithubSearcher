@@ -1,5 +1,12 @@
 ## DD2476 - GithubProject
 
+### Indexing
+
+Extract the data.zip file as data
+Run the indexing.bat file (After setting up elasticsearch, see blow)
+
+
+
 ### Run Backend
 
 In the project directory, run:
@@ -18,6 +25,8 @@ Then open http://127.0.0.1:5000/ on your navigator.
 
 Modules that need to be pip installed:
 - flask
+
+Alternatively run the start_server.bat file which starts the server through python.
 
 ### ElasticSearch
 For running ElasticSearch and Kibana, make sure to have OPENJDK for the Java runtime environment (AdoptOpenJDK11 was used for this project.)
